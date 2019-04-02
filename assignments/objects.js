@@ -19,27 +19,81 @@ const example = {
 
 // Write your intern objects here:
 
+const mitzi = {
+  id: 1,
+  name: "Mitzi",
+  email: "mmelloy0@psu.edu",
+  gender: "F"
+}
+
+const kennan = {
+  id: 2,
+  name: "Kennan",
+  email: "kdiben1@tinypic.com",
+  gender: "M",
+  speak: function(){return `Hello, my name is ${this.name}`;
+}
+}
+
+const keven = {
+  id: 3,
+  name: "Keven",
+  email: "kmummery2@wikimedia.org",
+  gender: "M"
+}
+
+const gannie = {
+  id: 4,
+  name: "Gannie",
+  email:  "gmartinson3@illinois.edu",
+  gender: "M"
+}
+
+const antonietta = {
+  id: 5,
+  name: "Antonietta",
+  email: "adaine5@samsung.com",
+  gender: "F"
+}
+
+// const HrData = [[1, "Mitzi", "mmelloy0@psu.edu", "F"],
+//  [2, "Kennan", "kdiben1@tinypic.com", "M"],
+// [3, "Keven", "kmummery2@wikimedia.org", "M"],
+//  [4, "Gannie", "gmartinson3@illinois.edu", "M"],
+//  [5, "Antonietta", "adaine5@samsung.com", "F"]];
+
+console.log(Object.values(mitzi));
+console.log(Object.values(kennan));
+console.log(Object.values(keven));
+console.log(Object.values(gannie));
+console.log(Object.values(antonietta));
+
+// console.log(newInterns);
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
-// Mitzi's name
+console.log(mitzi.name);// Mitzi's name
 
-// Kennan's ID
+console.log(kennan.id);// Kennan's ID
 
-// Keven's email
+console.log(keven.email)// Keven's email
 
-// Gannie's name
+console.log(gannie.name);// Gannie's name
 
-// Antonietta's Gender
+console.log(antonietta.gender);// Antonietta's Gender
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
+console.log(kennan.speak());
+
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-
+const letMultiply = function(x,y)
+{return x*y; }
+antonietta.multiplyNums = letMultiply;
+console.log(antonietta.multiplyNums(3,4));
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
